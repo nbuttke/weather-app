@@ -22,14 +22,14 @@
               <div class="col-9">
                 <input
                   type="search"
-                  placeholder="Enter a city..."
+                  placeholder="Input a city"
                   class="form-control"
                   id="cityInput" />
               </div>
               <div class="col-3">
                 <input
                   type="submit"
-                  value="Search"
+                  value="Find"
                   class="btn btn-primary w-100 search-btn" />
               </div>
             </div>
@@ -37,7 +37,7 @@
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
-              <li>Last updated: <span id="date"> </span></li>
+              <li>Updated: <span id="date"> </span></li>
               <li id="description"></li>
             </ul>
             <div class="row">
@@ -49,35 +49,32 @@
                     id="icon" />
                   <div class="temp-link">
                     <strong id="temperature"></strong
-                    ><span class="units"
-                      ><a href="#" id="celsiusLink" class="celsius active"
-                        >°C</a
-                      >
-                      |
-                      <a href="#" id="fahrenheitLink" class="fahrenheit"
-                        >°F</a
-                      ></span
-                    >
+                    ><span class="units">°F</span>
                   </div>
                 </div>
               </div>
 
               <div class="col-6">
                 <ul>
+                  <li>Feels like: <span id="feelsLike"></span>°</li>
                   <li>Humidity: <span id="humidity"></span>%</li>
-                  <li>Wind speed: <span id="wind"></span> km/h</li>
+                  <li>Wind speed: <span id="wind"></span> mph</li>
                 </ul>
               </div>
             </div>
           </div>
+          <div class="weather-forecast" id="weatherForecast"></div>
         </div>
+        <small>
+          <a
+            class="name"
+            href="https://github.com/nbuttke/weather-app"
+            target="_blank"
+            >Open-source code</a
+          >
+          <span class="name"> By Nicole Buttke </span>
+        </small>
       </div>
-      <small>
-        <a href="https://github.com/nbuttke/weather-app">
-          Open source code on gitHub
-        </a>
-        Created by Nicole Buttke
-      </small>
     </div>
     <script src="src/app.js"></script>
   </body>

@@ -1,52 +1,85 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: hsl(240, 64%, 86%);
 }
-
-.weather-app {
-  max-width: 600px;
-  margin: 30px auto;
-  padding: 20px;
-  border: 1px solid #dadde1;
-  border-radius: 5px;
-}
-h2 {
-  color: purple;
-  font-size: 18px;
+h1 {
+  color: #6643b5;
+  font-size: 24px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
 }
-
 ul {
   margin: 0;
   padding: 0;
 }
-
 li {
   list-style: none;
-  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 18px;
+  color: cadetblue;
+  margin: 5px;
   padding: 0;
-  color: rgb(135, 135, 135);
-  font-size: 16px;
-  font-weight: 100;
-  line-height: 20px;
 }
-
+li:first-letter {
+  text-transform: capitalize;
+}
+small .name {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #7b5388;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.weather-app {
+  padding: 20px;
+  border: 3px solid #dadde1;
+  border-radius: 40px;
+  background: rgb(235, 247, 217);
+}
+.overview {
+  margin-bottom: 20px;
+}
 .weather-temperature img {
-  margin-right: 12px;
-  float: left;
-  height: 62px;
-  width: 62px;
+  margin-right: 5px;
+  height: 70px;
+  width: 70px;
 }
 .weather-temperature strong {
-  color: cadetblue;
-  font-size: 60px;
+  color: #b192f8;
+  font-size: 65px;
   line-height: 1;
-  font-weight: 350;
+  font-weight: 400;
 }
-
 .weather-temperature .units {
   position: relative;
-  font-size: 15px;
+  font-size: 16px;
   top: -34px;
+  color: #6643b5;
+}
+.weather-temperature .active {
+  color: #6643b5;
+}
+.search-form .search-btn {
+  color: rgb(255, 255, 255);
+  background-color: #67c2e6;
+  border: solid transparent;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #9852f9;
+}
+.weather-forecast-date {
+  font-size: 20px;
+  font-style: italic;
+}
+.weather-forecast-temperature {
+  font-size: 14px;
+}
+.weather-forecast-temperature-max {
+  font-weight: bold;
 }
